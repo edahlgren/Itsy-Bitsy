@@ -1,0 +1,51 @@
+	Sat Jan 28 19:04 2012 Time and Allocation Profiling Report  (Final)
+
+	   ranplay +RTS -p -K100M -RTS 1e6
+
+	total time  =        0.04 secs   (2 ticks @ 20 ms)
+	total alloc =  21,745,020 bytes  (excludes profiling overheads)
+
+COST CENTRE                    MODULE               %time %alloc
+
+bybit                          PowerSet             100.0   76.6
+maxim                          PowerSet               0.0    7.3
+lookup'                        PowerSet               0.0    1.6
+bound                          PowerSet               0.0   14.2
+
+
+                                                                                               individual    inherited
+COST CENTRE              MODULE                                               no.    entries  %time %alloc   %time %alloc
+
+MAIN                     MAIN                                                   1           0   0.0    0.0   100.0  100.0
+ main                    Main                                                 440           2   0.0    0.2   100.0   99.8
+  bound                  PowerSet                                             447      311293   0.0   14.2     0.0   14.2
+  pset                   PowerSet                                             445           1   0.0    0.0   100.0   76.6
+   bybit                 PowerSet                                             446           1 100.0   76.6   100.0   76.6
+  maxim                  PowerSet                                             444           1   0.0    7.3     0.0    8.9
+   lookup'               PowerSet                                             451       21684   0.0    1.6     0.0    1.6
+  treat                  PowerSet                                             443           2   0.0    0.0     0.0    0.0
+  rand_assoc             Main                                                 441           4   0.0    0.1     0.0    0.1
+ CAF:main6               Main                                                 434           1   0.0    0.0     0.0    0.0
+  main                   Main                                                 442           0   0.0    0.0     0.0    0.0
+ CAF:lvl_r7oR            Main                                                 433           1   0.0    0.0     0.0    0.0
+  main                   Main                                                 452           0   0.0    0.0     0.0    0.0
+ CAF:main3               Main                                                 432           1   0.0    0.0     0.0    0.0
+  main                   Main                                                 453           0   0.0    0.0     0.0    0.0
+ CAF:main8               Main                                                 431           1   0.0    0.0     0.0    0.0
+ CAF                     GHC.Float                                            407           2   0.0    0.0     0.0    0.0
+ CAF                     GHC.Int                                              392           1   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Handle.FD                                     368           2   0.0    0.1     0.0    0.1
+ CAF                     System.Posix.Internals                               367           1   0.0    0.0     0.0    0.0
+ CAF                     GHC.Conc                                             351           1   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Handle.Internals                              342           1   0.0    0.0     0.0    0.0
+ CAF                     GHC.IO.Encoding.Iconv                                336           5   0.0    0.0     0.0    0.0
+ CAF:lit1_r1Ke           PowerSet                                             298           1   0.0    0.0     0.0    0.0
+  bound                  PowerSet                                             449           0   0.0    0.0     0.0    0.0
+ CAF:lit_r1Kc            PowerSet                                             297           1   0.0    0.0     0.0    0.0
+  bound                  PowerSet                                             448           0   0.0    0.0     0.0    0.0
+ CAF:main_sum            PowerSet                                             296           1   0.0    0.0     0.0    0.0
+  maxim                  PowerSet                                             450           0   0.0    0.0     0.0    0.0
+ CAF                     System.Random                                        247           1   0.0    0.0     0.0    0.0
+ CAF                     Data.Fixed                                           241           2   0.0    0.0     0.0    0.0
+ CAF                     Data.Time.Clock.POSIX                                239           2   0.0    0.0     0.0    0.0
+ CAF                     Data.Time.Clock.CTimeval                             238           1   0.0    0.0     0.0    0.0
