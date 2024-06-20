@@ -1,1 +1,1 @@
-This is a collection of Bit-oriented code in Haskell, thus making heavy use of Data.Bits.  Algorithms that can take advantage of number theoretic uses of bit reps are going to be popping up.
+This is a collection of Bit-oriented code in Haskell making use of Data.Bits.
